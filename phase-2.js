@@ -61,7 +61,7 @@ function workout(totalTime) {
     .then((timeLeft) =>
       console.log(`done working out with ${timeLeft / 1000} seconds`)
     )
-    .catch((error) => console.error(error.message));
+    .catch((error) => console.error(`Error: ${error.message}`));
 }
 
 /* ============================ TEST YOUR CODE ============================
@@ -74,7 +74,7 @@ Comment in each invocation of your workout function below and run the file
 // should print out the following:
 // Error:  you dont have enough time to stretch
 
-// workout(1000);
+workout(1000);
 // should print out the following:
 // done stretching
 // Error:  you dont have enough time to run on treadmill
